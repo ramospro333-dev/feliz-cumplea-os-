@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100d19">
+
+  <title>Para Violet | Un regalo especial</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Fondo animado -->
+  <div class="background" aria-hidden="true">
+    <div class="stars" id="stars"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <div class="fireflies" id="fireflies"></div>
+  </div>
+
+  <!-- Pantalla de bienvenida -->
+  <main>
+    <section class="welcome" id="welcome">
+      <div class="welcome-content">
+        <p class="eyebrow">UN REGALO HECHO CON CARIÑO</p>
+
+        <h1>Para ti, Violet</h1>
+
+        <p class="welcome-message">
+          Hay regalos que no se envuelven en papel,
+          sino en pequeños momentos y palabras sinceras.
+        </p>
+
+        <button class="open-button" id="startButton" type="button">
+          Abrir tu regalo
+          <span aria-hidden="true">♡</span>
+        </button>
+
+        <p class="welcome-footer">Hecho especialmente para ti</p>
+      </div>
+    </section>
+
+    <!-- Escena principal: carta a la izquierda y árbol a la derecha -->
+    <section class="scene" id="scene" hidden>
+      <header class="scene-header">
+        <p>UN PEQUEÑO RINCÓN PARA TI</p>
+        <h1>Happy Birthday, Violet</h1>
+      </header>
+
+      <div class="gift-layout">
+        <!-- Carta -->
+        <article class="letter">
+          <div class="letter-decoration" aria-hidden="true">♡</div>
+
+          <p class="letter-label">UNA CARTA PARA TI</p>
+
+          <h2>Querida Violet,</h2>
+
+          <div class="letter-body">
+            <p>
+              Feliz cumpleaños, Violet. Espero que hoy sea un día
+              especial para ti, lleno de momentos bonitos, sonrisas
+              sinceras y personas que te hagan sentir querida.
+            </p>
+            <p>
+              Aunque nos conocimos jugando Roblox, me alegra que
+              nuestros caminos se hayan cruzado. A veces, las
+              amistades más inesperadas terminan convirtiéndose
+              en recuerdos que uno aprecia mucho.
+            </p>
+            <p>
+              Quiero que recuerdes que mereces cosas bonitas,
+              tranquilidad y muchas razones para sonreír. Espero
+              que este nuevo año de tu vida te acerque a tus sueños
+              y te regale experiencias que guardes con cariño.
+            </p>
+            <p>
+              Gracias por ser parte de esta amistad. Tal vez estas
+              palabras sean sencillas, pero están hechas con aprecio
+              y con la intención de sacarte una sonrisa en tu día.
+            </p>
+            <p>
+              Que nunca te falten motivos para seguir adelante,
+              personas que valoren tu forma de ser y momentos
+              que te recuerden lo especial que eres.
+            </p>
+          </div>
+
+          <div class="letter-signature">
+            <span>Con cariño,</span>
+            <strong>Marco </strong>
+          </div>
+        </article>
+
+        <!-- Árbol de corazones -->
+        <div class="tree-area">
+          <div class="tree-glow" aria-hidden="true"></div>
+
+          <div class="tree-heading">
+            <p>UN ÁRBOL DE DESEOS</p>
+            <span>Un corazón por cada buen recuerdo</span>
+          </div>
+
+          <div class="tree-container">
+            <svg
+              class="tree-svg"
+              id="treeSvg"
+              viewBox="0 0 600 760"
+              role="img"
+              aria-label="Árbol mágico rodeado de hojas en forma de corazón"
+            >
+              <defs>
+                <linearGradient id="trunkGradient" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#503044"/>
+                  <stop offset="48%" stop-color="#bd8294"/>
+                  <stop offset="100%" stop-color="#543047"/>
+                </linearGradient>
+
+                <filter id="treeShadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="7"/>
+                </filter>
+              </defs>
+
+              <ellipse
+                cx="300"
+                cy="697"
+                rx="125"
+                ry="18"
+                fill="#d77dba"
+                opacity="0.18"
+                filter="url(#treeShadow)"
+              />
+
+              <g id="branches" fill="none" stroke-linecap="round">
+                <path
+                  d="M300 700 C286 610 316 540 300 450
+                     C287 375 305 305 300 220"
+                  stroke="url(#trunkGradient)"
+                  stroke-width="22"
+                />
+
+                <path
+                  d="M300 490 C250 440 205 390 155 325
+                     C130 290 110 245 96 208"
+                  stroke="url(#trunkGradient)"
+                  stroke-width="12"
+                />
+
+                <path
+                  d="M300 455 C352 405 399 356 441 300
+                     C462 269 478 228 486 190"
+                  stroke="url(#trunkGradient)"
+                  stroke-width="12"
+                />
+
+                <path
+                  d="M298 385 C250 350 221 300 211 245
+                     C205 215 208 187 218 155"
+                  stroke="url(#trunkGradient)"
+                  stroke-width="10"
+                />
+
+                <path
+                  d="M304 345 C352 310 375 263 378 218
+                     C380 184 370 151 356 125"
+                  stroke="url(#trunkGradient)"
+                  stroke-width="10"
+                />
+
+                <path
+                  d="M285 545 C238 520 190 493 147 450
+                     C120 422 100 391 83 358"
+                  stroke="url(#trunkGradient)"
+                  stroke-width="9"
+                />
+
+                <path
+                  d="M315 535 C362 511 411 483 449 445
+                     C477 417 496 381 510 347"
+                  stroke="url(#trunkGradient)"
+                  stroke-width="9"
+                />
+              </g>
+
+              <!-- JavaScript generará las ramas pequeñas y las hojas -->
+              <g id="twigs"></g>
+            </svg>
+
+            <div class="tree-hearts" id="treeHearts" aria-hidden="true"></div>
+          </div>
+
+          <p class="tree-caption">
+            Que tus deseos encuentren siempre la forma de florecer
+          </p>
+        </div>
+      </div>
+
+      <button class="replay-button" id="replayButton" type="button">
+        Volver al inicio
+      </button>
+    </section>
+  </main>
+
+  <!-- Lógica de las animaciones y los botones -->
+  <script src="script.js"></script>
+</body>
+</html>
